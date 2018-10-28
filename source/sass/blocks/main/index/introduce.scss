@@ -1,0 +1,104 @@
+.introduce {
+  position: relative;
+
+  width: 320px;
+
+  text-align: center;
+
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat 0 0,
+    linear-gradient(to bottom, #63a73a 69%, #ffffff 69%, #ffffff 100%);
+}
+
+.introduce__header {
+  margin: 0;
+  padding: 24px 0 0 0;
+
+  @include fontOswaldRegular(36px, 36px, #ffffff);
+  letter-spacing: -0.55px;
+}
+
+.introduce__description {
+  margin-top: 26px;
+
+  @include fontOswaldRegular(14px, 14px, #ffffff);
+  text-transform: uppercase;
+}
+
+.introduce__button {
+  position: absolute;
+  bottom: -40px;
+  left: 20px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    span {
+      opacity: 0.3;
+    }
+  }
+}
+
+.introduce__image {
+  margin-top: 15px;
+}
+
+.introduce__image-container {
+  margin-bottom: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .introduce {
+    width: $tablet-width;
+
+    background: none;
+  }
+
+  .introduce__text-container {
+    margin-top: 48px;
+    margin-left: 120px;
+  }
+
+  .introduce__header {
+    width: 420px;
+
+    margin: 0;
+    padding: 0;
+
+    @include fontOswaldRegular(60px, 60px);
+    font-weight: normal;
+    text-align: left;
+  }
+
+  .introduce__description {
+    margin-top: 42px;
+    margin-bottom: 5px;
+
+    @include fontOswaldRegular(20px, 20px);
+    text-align: left;
+  }
+
+  .introduce__image-container {
+    width: 709px;
+    height: 609px;
+
+    margin-left: 29px;
+  }
+
+  .introduce__button {
+    top: 230px;
+    left: 119px;
+
+    width: 245px;
+    height: 37px;
+
+    padding-top: 15px;
+
+    @include fontOswaldRegular(20px, 20px, #ffffff);
+
+    span {
+      margin-left: -3px;
+    }
+  }
+}

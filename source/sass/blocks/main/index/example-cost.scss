@@ -1,0 +1,22 @@
+.example-cost {
+  @include fontOswaldRegular(14px, 20px);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .example-cost {
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+
+    @include fontOswaldRegular(20px, 20px);
+    text-align: right;
+  }
+
+  .example-cost__description {
+    margin-top: 9px;
+    margin-bottom: 9px;
+  }
+}

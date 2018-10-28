@@ -1,0 +1,26 @@
+.main-nav {
+  margin-top: 13px;
+}
+
+.main-nav__logo-wrapper {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    align-items: center;
+
+    width: 708px;
+
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-nav__logo-wrapper {
+    flex-grow: 1;
+
+    border-bottom: none;
+  }
+}

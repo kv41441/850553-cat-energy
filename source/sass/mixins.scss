@@ -1,0 +1,13 @@
+@mixin fontOswaldRegular ($font-size: 16px, $line-height: 20px, $color: #111111) {
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin fontArialRegular ($font-size: 14px, $line-height: 16px, $color: #444444) {
+  font-family: "Arial", "Tahoma", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
