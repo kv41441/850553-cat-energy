@@ -92,6 +92,7 @@
   .additional-goods-table__header {
     width: 200px;
 
+    margin-top: -7px;
     padding-bottom: 0;
 
     @include fontOswaldRegular(20px, 20px);

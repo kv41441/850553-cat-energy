@@ -26,21 +26,21 @@
 .example__item-container {
   display: flex;
 
-  margin-top: 40px;
+  margin-top: 26px;
 }
 
 .example__item {
   &--weight {
-    margin-left: 39px;
+    margin-left: 20px;
   }
 
   &--time {
-    margin-left: 73px;
+    margin-left: 34px;
   }
 }
 
 .example__cost {
-  margin-top: 20px;
+  margin-top: 35px;
 }
 
 .example__image-container {
@@ -139,6 +139,7 @@
 
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 6px;
   }
 
   .example__header {
@@ -161,24 +162,24 @@
   .example__item-container {
     width: 384px;
 
-    margin-top: 49px;
+    margin-top: 34px;
     padding-top: 20px;
   }
 
   .example__item {
     &--weight {
-      margin-left: 23px;
+      margin-left: 0;
     }
 
     &--time {
-      margin-left: 80px;
+      margin-left: 41px;
     }
   }
 
   .example__cost {
     align-self: center;
 
-    margin-top: 39px;
+    margin-top: 46px;
   }
 
   .example__image-wrapper {

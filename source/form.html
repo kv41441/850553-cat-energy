@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Кэт энерджи - Подбор программы</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -124,7 +125,7 @@
     </svg>
 
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="page-header__nav main-nav">
         <div class="main-nav__logo-wrapper">
           <a class="page-header__logo" href="index.html">
             <picture>
@@ -273,21 +274,23 @@
           </ul>
         </fieldset>
 
-        <div class="form__submit-button-wrapper">
-          <button class="form__submit-button button" type="submit" name="form__submit-button">
-            <span>Отправить заявку</span>
-          </button>
-        </div>
+        <div class="form__button-required-wrapper">
+          <div class="form__submit-button-wrapper">
+            <button class="form__submit-button button" type="submit" name="form__submit-button">
+              <span>Отправить заявку</span>
+            </button>
+          </div>
 
-        <div class="form__required-info">
-          <span>* — Обязательные поля</span>
+          <div class="form__required-info">
+            <span>* — Обязательные поля</span>
+          </div>
         </div>
       </form>
     </main>
 
     <footer class="page-footer">
-      <section class="contacts contacts--bg">
-        <div class="contacts__container">
+      <section class="contacts contacts--gray-bg">
+        <div class="contacts__container contacts__container--gray-bg">
           <h2 class="visually-hidden">Как нас найти</h2>
           <div class="contacts__header-container">
             <p class="contacts__header">Приглашаем <br> к сотрудничеству дилеров!</p>
@@ -350,5 +353,6 @@
       </div>
     </footer>
 
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>

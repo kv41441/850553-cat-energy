@@ -25,6 +25,7 @@
     color: #111111;
     text-decoration: none;
     text-transform: uppercase;
+    white-space: nowrap;
 
     &:not([href]) {
       &::before {
@@ -56,6 +57,7 @@
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .site-list__item {
