@@ -1,0 +1,239 @@
+.info {
+  width: 320px;
+}
+
+.info__header {
+  margin: 16px 0 0 20px;
+  padding: 0;
+
+  @include fontOswaldRegular(36px, 60px);
+  font-weight: normal;
+}
+
+.info__list {
+  width: 280px;
+
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 47px;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.info__item {
+  position: relative;
+
+  letter-spacing: -0.15px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 26px;
+  }
+
+  &--first-step {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -2px;
+      left: 0;
+
+      width: 60px;
+      height: 60px;
+
+      background: url("../img/advantage-leaf@1x.png") no-repeat,
+        $green-color;
+      background-size: 50px 50px;
+      background-position: 50% 50%;
+    }
+  }
+
+  &--second-step {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -2px;
+      left: 0;
+
+      width: 60px;
+      height: 60px;
+
+      background: url("../img/advantage-powder@1x.png") no-repeat,
+        $green-color;
+      background-size: 50px 50px;
+      background-position: 50% 50%;
+    }
+  }
+
+  &--third-step {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -2px;
+      left: 0;
+
+      width: 60px;
+      height: 60px;
+
+      background: url("../img/advantage-dining@1x.png") no-repeat,
+        $green-color;
+      background-size: 50px 50px;
+      background-position: 50% 50%;
+    }
+  }
+
+  &--fourth-step {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -2px;
+      left: 0;
+
+      width: 60px;
+      height: 60px;
+
+      background: url("../img/advantage-clock@1x.png") no-repeat,
+        $green-color;
+      background-size: 50px 50px;
+      background-position: 50% 50%;
+    }
+  }
+}
+
+.info__description {
+  width: 195px;
+
+  margin: 0;
+  padding-left: 80px;
+
+  @include fontArialRegular(14px, 18px);
+}
+
+@media (min-width: $tablet-width) {
+  .info {
+    width: 768px;
+
+    margin-top: 45px;
+    padding-bottom: 30px;
+
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .info__header {
+    margin-left: 30px;
+
+    @include fontOswaldRegular(60px,60px);
+    font-weight: normal;
+  }
+
+  .info__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 708px;
+
+    margin-top: 73px;
+  }
+
+  .info__item {
+    &:nth-of-type(2n) {
+      margin-left: 139px;
+    }
+
+    &:nth-of-type(n + 3) {
+      margin-top: 108px;
+    }
+
+    &--first-step {
+      &::before {
+        top: 0;
+
+        width: 80px;
+        height: 80px;
+      }
+
+      &::after {
+        content: "1";
+
+        position: absolute;
+        top: -40px;
+        right: 16px;
+        z-index: -1;
+
+        @include fontOswaldRegular(281px, 281px, #f2f2f2);
+      }
+    }
+
+    &--second-step {
+      &::before {
+        top: 0;
+
+        width: 80px;
+        height: 80px;
+      }
+
+      &::after {
+        content: "2";
+
+        position: absolute;
+        top: -40px;
+        right: 0;
+        z-index: -1;
+
+        @include fontOswaldRegular(281px, 281px, #f2f2f2);
+      }
+    }
+
+    &--third-step {
+      &::before {
+        top: 0;
+
+        width: 80px;
+        height: 80px;
+      }
+
+      &::after {
+        content: "3";
+
+        position: absolute;
+        top: -40px;
+        right: -4px;
+        z-index: -1;
+
+        @include fontOswaldRegular(281px, 281px, #f2f2f2);
+      }
+    }
+
+    &--fourth-step {
+      &::before {
+        top: 0;
+
+        width: 80px;
+        height: 80px;
+      }
+
+      &::after {
+        content: "4";
+
+        position: absolute;
+        top: -40px;
+        right: -4px;
+        z-index: -1;
+
+        @include fontOswaldRegular(281px, 281px, #f2f2f2);
+      }
+    }
+  }
+
+  .info__description {
+    width: 245px;
+
+    padding: 111px 0 0 0;
+
+    @include fontArialRegular(16px, 24px);
+  }
+}

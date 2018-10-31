@@ -1,0 +1,40 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__link {
+  @include fontArialRegular(16px, 16px);
+  text-decoration: none;
+
+  &:active {
+    fill: $green-color;
+
+    opacity: 0.3;
+  }
+}
+
+.copyright__icon {
+  margin-right: -6px;
+
+  svg {
+    fill: #666666;
+
+    &:hover {
+      fill: $green-color;
+    }
+
+    &:active {
+      fill: $green-color;
+
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    margin-top: -2px;
+  }
+}
