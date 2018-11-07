@@ -98,3 +98,29 @@
     margin-top: 33px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .card {
+    width: 245px;
+
+    margin-bottom: 7px;
+  }
+
+  .card__image {
+    &--small-image {
+      min-width: 163px;
+      height: 173px;
+    }
+
+    &--big-image {
+      min-width: 195px;
+      height: 207px;
+    }
+  }
+
+  .card__order-button {
+    width: 170px;
+
+    margin-top: 33px;
+  }
+}

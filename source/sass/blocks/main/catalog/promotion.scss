@@ -55,3 +55,28 @@
     text-align: left;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promotion {
+    width: 245px;
+
+    margin: 39px 0 0 0;
+    padding: 0;
+
+    &::before {
+      left: 97px;
+    }
+
+    img {
+      width: 245px;
+      height: 289px;
+    }
+  }
+
+  .promotion__description {
+    top: 170px;
+    left: 40px;
+
+    text-align: center;
+  }
+}

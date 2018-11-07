@@ -510,6 +510,7 @@ fieldset {
 
         width: 768px;
         height: 3px;
+
         background: linear-gradient(to right, $green-color 0%, $green-color 4%, #ffffff 4%, #ffffff 42.5%, $green-color 42.5%, $green-color 100%);
       }
     }
@@ -667,6 +668,184 @@ fieldset {
 
     span {
       margin-left: 62px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: 1440px;
+
+    //margin-left: auto;
+    //margin-right: auto;
+  }
+
+  .form__header-wrapper {
+    width: 1220px;
+
+    margin: 57px auto 0 auto;
+    padding-left: 0;
+  }
+
+  .form__list {
+    width: 570px;
+
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .form__item {
+    &--radio {
+      padding-left: 31px;
+    }
+
+    &--checkbox {
+      width: 210px;
+
+      &:not(:last-of-type) {
+        margin-right: 79px;
+      }
+    }
+  }
+
+  .form__cat-info-wrapper {
+    width: 570px;
+
+    margin-top: 0;
+
+    .form__label {
+      padding-left: 1px;
+    }
+  }
+
+  .form__program-goal-wrapper {
+    width: 570px;
+
+    margin: 30px 0 18px 0;
+  }
+
+  .form__fieldset-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1220px;
+
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form__owner-info-wrapper {
+    width: 1220px;
+
+    margin: 50px auto 0 auto;
+
+    .form__input-text {
+      text-indent: 17px;
+    }
+
+    .form__list {
+      display: flex;
+      justify-content: space-between;
+
+      width: 1220px;
+    }
+
+    .form__item {
+      width: 570px;
+
+      &:first-of-type {
+        padding-left: 1px;
+      }
+    }
+  }
+
+  .form__label {
+    &--email {
+      padding-right: 20px;
+    }
+  }
+
+  .form__icon-wrapper {
+    &--mail {
+      right: 21px;
+    }
+
+    &--phone {
+      right: 19px;
+    }
+  }
+
+  .form__comment-wrapper {
+    width: 1220px;
+
+    margin-top: 47px;
+  }
+
+  .form__comment {
+    width: 1220px;
+
+    margin-top: 76px;
+  }
+
+  .form__additional {
+    width: 1220px;
+
+    margin-top: 62px;
+
+    .form__list {
+      width: 1220px;
+    }
+  }
+
+  .form__button-required-wrapper {
+    width: 1220px;
+
+    margin-top: 9px;
+    padding-bottom: 67px;
+  }
+
+  .form__submit-button {
+    width: 567px;
+  }
+
+  .form__required-info {
+    span {
+      margin-left: 82px;
+    }
+  }
+
+  .form__legend {
+    width: 1220px;
+
+    &--owner-info {
+      &::before {
+        left: -110px;
+
+        width: 118%;
+
+        background: linear-gradient(to right, $green-color 0%, $green-color 5%, #ffffff 5%, #ffffff 46%, $green-color 46%, $green-color 100%);
+      }
+    }
+
+    &--comment {
+      &::before {
+        left: -110px;
+
+        width: 118%;
+
+        background: linear-gradient(to right, $green-color 0%, $green-color 5%, #ffffff 5%, #ffffff 23%, $green-color 23%, $green-color 100%);
+      }
+    }
+
+    &--additional {
+      &::before {
+        left: -110px;
+
+        width: 118%;
+
+        background: linear-gradient(to right, $green-color 0%, $green-color 4.9%, #ffffff 4.9%, #ffffff 25.15%, $green-color 25.15%, $green-color 100%);
+      }
     }
   }
 }

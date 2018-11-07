@@ -76,3 +76,27 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    z-index: 2;
+  }
+
+  .site-list__item {
+    a {
+      @include fontOswaldRegular(20px, 25px);
+    }
+
+    &--white {
+      a {
+        color: #ffffff;
+
+        &:not([href]) {
+          &::before {
+            background-color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

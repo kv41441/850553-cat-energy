@@ -237,3 +237,48 @@
     @include fontArialRegular(16px, 24px);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .info {
+    width: 1440px;
+
+    margin-top: 53px;
+
+    border-bottom: none;
+  }
+
+  .info__wrapper {
+    width: 1220px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info__header {
+    margin: 16px 0 0 0;
+  }
+
+  .info__list {
+    width: 1220px;
+
+    margin: 73px 0 0 0;
+  }
+
+  .info__item {
+    width: 245px;
+
+    margin-right: 80px;
+
+    &:nth-of-type(2n) {
+      margin-left: 0;
+    }
+
+    &:nth-of-type(n+3) {
+      margin-top: 0;
+    }
+
+    &:nth-of-type(4n) {
+      margin-right: 0;
+    }
+  }
+}

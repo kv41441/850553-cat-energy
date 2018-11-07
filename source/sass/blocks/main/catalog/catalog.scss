@@ -23,3 +23,13 @@
     margin-right: auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: 1440px;
+  }
+
+  .catalog__card-wrapper {
+    width: 1220px;
+  }
+}

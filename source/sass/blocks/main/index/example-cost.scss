@@ -20,3 +20,13 @@
     margin-bottom: 9px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .example-cost {
+    flex-direction: row;
+  }
+
+  .example-cost__description {
+    margin: 0 64px 0 0;
+  }
+}

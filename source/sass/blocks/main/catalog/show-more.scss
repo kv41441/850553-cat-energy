@@ -107,3 +107,19 @@
     margin-right: auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .show-more {
+    width: 245px;
+
+    margin-bottom: 7px;
+
+    &::before {
+      left: 93px;
+    }
+  }
+
+  .show-more__button {
+    width: 170px;
+  }
+}
