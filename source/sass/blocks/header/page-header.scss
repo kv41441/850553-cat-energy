@@ -64,3 +64,22 @@
     padding: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1440px;
+  }
+
+  .page-header--green-bg {
+    background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #64a83b 50%, #64a83b 99.9%, #ffffff 99.9%, #ffffff 100%);
+  }
+
+  .page-header__nav {
+    padding-top: 30px;
+  }
+
+  .page-header__logo {
+    width: 202px;
+    height: 59px;
+  }
+}

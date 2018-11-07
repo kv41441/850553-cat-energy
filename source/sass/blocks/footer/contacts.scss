@@ -110,3 +110,44 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts__container {
+    position: relative;
+    z-index: 2;
+
+    justify-content: center;
+    width: 570px;
+
+    margin: 95px 0 0 110px;
+    padding-top: 43px;
+    padding-bottom: 40px;
+
+    background-color: #ffffff;
+  }
+
+  .contacts__header-container {
+    margin-left: -10px;
+    margin-right: 70px;
+  }
+
+  .contacts__address-container {
+    margin-left: 20px;
+
+    text-align: left;
+  }
+
+  .contacts__address {
+    margin-top: 18px;
+  }
+
+  .contacts__map {
+    width: 1440px;
+
+    margin-top: -294px;
+
+    img {
+      min-width: 1440px;
+    }
+  }
+}

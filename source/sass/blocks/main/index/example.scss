@@ -237,3 +237,67 @@
     background-color: #e6e6e6;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .example {
+    display: flex;
+    width: 1330px;
+
+    margin-top: 0;
+    padding-left: 110px;
+    padding-bottom: 70px;
+
+    background: linear-gradient(to bottom, #ffffff 30.5%, #f2f2f2 30.5%, #f2f2f2 100%);
+  }
+
+  .example__text-container {
+    width: 570px;
+
+    margin: 69px 0 0 0;
+  }
+
+  .example__description {
+    width: 435px;
+
+    margin-top: 147px;
+  }
+
+  .example__item-container {
+    margin-top: 49px;
+  }
+
+  .example__cost {
+    margin-top: 61px;
+  }
+
+  .example__image-wrapper {
+    margin: 0;
+  }
+
+  .example__image-before-wrapper {
+    width: 365px;
+
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 20%, transparent 20%, transparent 80%, #f2f2f2 80%, #f2f2f2 100%);
+  }
+
+  .example__image-after-wrapper {
+    margin-left: -28px;
+  }
+
+  .example__image-container {
+    width: 768px;
+
+    margin-top: 16px;
+    margin-left: 6px;
+  }
+
+  .example__button-container {
+    margin-top: 37px;
+    margin-left: -17px;
+    margin-right: 15px;
+  }
+
+  .example__button {
+    background-color: #f2f2f2;
+  }
+}

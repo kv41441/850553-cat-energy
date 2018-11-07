@@ -123,3 +123,36 @@
     width: 634px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .additional-goods-table__row {
+    width: 895px;
+
+    padding: 19px 0 13px 0;
+
+    border-left: none;
+    border-right: none;
+  }
+
+  .additional-goods-table__button-container {
+    padding-top: 0;
+  }
+
+  .additional-goods-table__button {
+    width: 245px;
+
+    margin-top: -2px;
+  }
+
+  .additional-goods-table__weight {
+    margin-left: 109px;
+
+    text-align: left;
+  }
+
+  .additional-goods-table__cost {
+    margin-left: 79px;
+
+    text-align: left;
+  }
+}
