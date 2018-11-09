@@ -50,10 +50,10 @@
 .contacts__map {
   margin-top: 10px;
 
-  background: $lightgray-color url("../img/bg-map-mobile@1x.png");
+  background: $lightgray-color url("../img/bg-map-mobile@1x.png") no-repeat 0 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url("../img/bg-map-mobile@2x.jpg") no-repeat 0 0;
+    background: $lightgray-color url("../img/bg-map-mobile@2x.jpg") no-repeat 0 0;
     background-size: 100% 400px;
   }
 
