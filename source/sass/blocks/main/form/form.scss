@@ -481,13 +481,27 @@ fieldset {
 
       &::before {
         top: 23px;
-        left: -69px;
+        right: 634px;
         z-index: -1;
 
-        width: 768px;
+        width: 100vw;
         height: 3px;
 
-        background: linear-gradient(to right, $green-color 0%, $green-color 4%, #ffffff 4%, #ffffff 81.5%, $green-color 81.5%, $green-color 100%);
+        background-color: $green-color;
+      }
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        top: 23px;
+        left: 553px;
+        z-index: -1;
+
+        width: 20%;
+        height: 3px;
+
+        background-color: $green-color;
       }
     }
 
@@ -496,13 +510,27 @@ fieldset {
 
       &::before {
         top: 23px;
+        right: 217px;
+        z-index: -1;
+
+        width: 100vw;
+        height: 3px;
+
+        background-color: $green-color;
+      }
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        top: 23px;
         left: -69px;
         z-index: -1;
 
-        width: 768px;
+        width: 19px;
         height: 3px;
 
-        background: linear-gradient(to right, $green-color 0%, $green-color 4%, #ffffff 4%, #ffffff 37.5%, $green-color 37.5%, $green-color 100%);
+        background-color: $green-color;
       }
     }
 
@@ -511,13 +539,27 @@ fieldset {
 
       &::before {
         top: 22px;
+        right: 249px;
+        z-index: -1;
+
+        width: 100vw;
+        height: 3px;
+
+        background-color: $green-color;
+      }
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        top: 23px;
         left: -69px;
         z-index: -1;
 
-        width: 768px;
+        width: 10px;
         height: 3px;
 
-        background: linear-gradient(to right, $green-color 0%, $green-color 4%, #ffffff 4%, #ffffff 42.5%, $green-color 42.5%, $green-color 100%);
+        background-color: $green-color;
       }
     }
   }
@@ -822,35 +864,39 @@ fieldset {
   }
 
   .form__legend {
-    width: 1220px;
-
     &--owner-info {
       &::before {
-        left: -110px;
+        right: 634px;
+      }
 
-        width: 112%;
+      &::after {
+        left: 553px;
 
-        background: linear-gradient(to right, $green-color 0%, $green-color 5%, #ffffff 5%, #ffffff 46%, $green-color 46%, $green-color 100%);
+        width: 100px;
       }
     }
 
     &--comment {
       &::before {
-        left: -110px;
+        right: 218px;
+      }
 
-        width: 112%;
+      &::after {
+        left: 220px;
 
-        background: linear-gradient(to right, $green-color 0%, $green-color 5%, #ffffff 5%, #ffffff 23%, $green-color 23%, $green-color 100%);
+        width: 100px;
       }
     }
 
     &--additional {
       &::before {
-        left: -110px;
+        right: 250px;
+      }
 
-        width: 112%;
+      &::after {
+        left: 252px;
 
-        background: linear-gradient(to right, $green-color 0%, $green-color 4.9%, #ffffff 4.9%, #ffffff 25.15%, $green-color 25.15%, $green-color 100%);
+        width: 100px;
       }
     }
   }
