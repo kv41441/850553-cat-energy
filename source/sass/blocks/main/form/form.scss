@@ -1,5 +1,8 @@
 .form {
   width: 320px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form__header-wrapper {
@@ -394,6 +397,9 @@ fieldset {
 @media (min-width: $tablet-width) {
   .form {
     width: 768px;
+
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .form__header-wrapper {
@@ -674,10 +680,10 @@ fieldset {
 
 @media (min-width: $desktop-width) {
   .form {
-    width: 1440px;
+    width: 1300px;
 
-    //margin-left: auto;
-    //margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .form__header-wrapper {
@@ -822,7 +828,7 @@ fieldset {
       &::before {
         left: -110px;
 
-        width: 118%;
+        width: 112%;
 
         background: linear-gradient(to right, $green-color 0%, $green-color 5%, #ffffff 5%, #ffffff 46%, $green-color 46%, $green-color 100%);
       }
@@ -832,7 +838,7 @@ fieldset {
       &::before {
         left: -110px;
 
-        width: 118%;
+        width: 112%;
 
         background: linear-gradient(to right, $green-color 0%, $green-color 5%, #ffffff 5%, #ffffff 23%, $green-color 23%, $green-color 100%);
       }
@@ -842,7 +848,7 @@ fieldset {
       &::before {
         left: -110px;
 
-        width: 118%;
+        width: 112%;
 
         background: linear-gradient(to right, $green-color 0%, $green-color 4.9%, #ffffff 4.9%, #ffffff 25.15%, $green-color 25.15%, $green-color 100%);
       }

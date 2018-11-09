@@ -3,8 +3,8 @@
 
   width: 320px;
 
-  /*margin-left: auto;
-  margin-right: auto;*/
+  margin-left: auto;
+  margin-right: auto;
 
   &::before {
     content: "";
@@ -51,6 +51,9 @@
   .page-header {
     width: $tablet-width;
 
+    margin-left: auto;
+    margin-right: auto;
+
     &::before {
       display: none;
     }
@@ -67,7 +70,10 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    width: 1440px;
+    width: 1220px;
+
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .page-header--green-bg {

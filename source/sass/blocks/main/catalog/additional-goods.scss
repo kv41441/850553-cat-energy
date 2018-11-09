@@ -1,5 +1,8 @@
 .additional-goods {
   width: 320px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .additional-goods__header-container,
@@ -42,13 +45,15 @@
     width: 768px;
 
     margin-top: 22px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .additional-goods__header-container {
     position: relative;
     z-index: 1;
 
-    width: 768px;
+    width: 741px;
 
     margin-left: 27px;
 
@@ -129,7 +134,7 @@
       top: 68px;
       left: -110px;
 
-      width: 118%;
+      width: 112%;
     }
   }
 

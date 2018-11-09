@@ -1,7 +1,8 @@
 .introduce {
-  position: relative;
-
   width: 320px;
+
+  margin-left: auto;
+  margin-right: auto;
 
   text-align: center;
 
@@ -12,6 +13,10 @@
     background: url("../img/index-background-mobile@2x.jpg") no-repeat 0 0;
     background-size: 640px 610px;
   }
+}
+
+.introduce__wrapper {
+  position: relative;
 }
 
 .introduce__header {
@@ -55,9 +60,16 @@
 
 @media (min-width: $tablet-width) {
   .introduce {
-    width: $tablet-width;
+    width: 100%;
 
     background: none;
+  }
+
+  .introduce__wrapper {
+    width: 768px;
+
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .introduce__text-container {
@@ -110,9 +122,9 @@
 
 @media (min-width: $desktop-width) {
   .introduce {
-    display: flex;
+    position: relative;
 
-    width: 1440px;
+    width: 100%;
 
     padding-bottom: 30px;
 
@@ -124,23 +136,33 @@
       right: 1px;
       z-index: 1;
 
-      width: 720px;
+      width: 50%;
       height: 696px;
 
-      background: url("../img/index-background-desktop@1x.jpg") no-repeat 0 0;
+      background: #64a83b url("../img/index-background-desktop@1x.jpg") no-repeat 0 0;
       background-size: 720px 696px;
+      background-position: right;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background: url("../img/index-background-desktop@2x.jpg") no-repeat 0 0;
-        background-size: 1440px 1392px;
+        background-size: 720px 696px;
       }
     }
+  }
+
+  .introduce__wrapper {
+    display: flex;
+
+    width: 1300px;
+
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .introduce__text-container {
     z-index: 4;
 
-    margin-left: 190px;
+    margin-left: 120px;
     padding-top: 52px;
   }
 
@@ -165,6 +187,6 @@
 
   .introduce__button {
     top: 335px;
-    left: 190px;
+    left: 120px;
   }
 }

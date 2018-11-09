@@ -1,6 +1,9 @@
 .categories {
   width: 320px;
 
+  margin-left: auto;
+  margin-right: auto;
+
   padding-top: 10px;
 }
 
@@ -159,6 +162,8 @@
     width: $tablet-width;
 
     margin-top: -35px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 0;
   }
 
@@ -259,9 +264,11 @@
 
 @media (min-width: $desktop-width) {
   .categories {
-    width: 1440px;
+    width: 1300px;
 
     margin-top: 38px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .categories__item-wrapper {
