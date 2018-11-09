@@ -1,4 +1,8 @@
 .contacts {
+  &--half-white-bg {
+    background: linear-gradient(to bottom, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
+  }
+
   &--gray-bg {
     background-color: $lightgray-color;
   }
@@ -32,8 +36,11 @@
 .contacts__container {
   display: flex;
 
+  width: 280px;
+
   margin-top: 13px;
-  margin-left: 19px;
+  margin-left: auto;
+  margin-right: auto;
 
   &--gray-bg {
     padding-top: 12px;
@@ -43,10 +50,23 @@
 .contacts__map {
   margin-top: 10px;
 
-  background-color: $lightgray-color;
+  background: $lightgray-color url("../img/bg-map-mobile@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/bg-map-mobile@2x.jpg") no-repeat 0 0;
+    background-size: 100% 400px;
+  }
 
   img {
+    width: 100%;
     height: 360px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 360px;
+
+    border: none;
   }
 
   &--background {
@@ -105,8 +125,22 @@
     margin-top: 38px;
 
     img {
-      width: 768px;
+      width: 100%;
       height: 400px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+
+      border: none;
+    }
+
+    background: url("../img/bg-map-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-map-tablet@2x.jpg") no-repeat 0 0;
+      background-size: 100% 400px;
     }
   }
 }
@@ -119,7 +153,7 @@
     justify-content: center;
     width: 570px;
 
-    margin: 95px 0 0 110px;
+    margin: 95px 0 0 342px;
     padding-top: 43px;
     padding-bottom: 40px;
 
@@ -142,12 +176,27 @@
   }
 
   .contacts__map {
-    width: 1440px;
+    width: 100%;
+    height: 400px;
 
     margin-top: -294px;
 
     img {
-      min-width: 1440px;
+      width: 100%;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+
+      border: none;
+    }
+
+    background: url("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-map-desktop@2x.jpg") no-repeat 0 0;
+      background-size: 100% 400px;
     }
   }
 }
