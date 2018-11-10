@@ -211,68 +211,74 @@
           </fieldset>
         </div>
 
-        <fieldset class="form__owner-info-wrapper">
-          <legend class="form__legend form__legend--owner-info">Контактные данные (владельца кота)</legend>
-          <ul class="form__list form__list-row" role="none">
-            <li class="form__item">
-              <label class="form__label form__label--email" for="form__email">
-                E-mail:*
-              </label>
-              <input class="form__input-text form__input-text--owner-info" type="email" name="form__email" id="form__email" placeholder="kuklachev@gmail.com" required>
-              <div class="form__icon-wrapper form__icon-wrapper--mail">
-                <svg width="17" height="13">
-                  <use xlink:href="#icon-mail"></use>
-                </svg>
-              </div>
-            </li>
-            <li class="form__item">
-              <label class="form__label" for="form__tel">
-                Телефон:*
-              </label>
-              <input class="form__input-text form__input-text--owner-info" type="tel" name="form__tel" id="form__tel" placeholder="8 (960) 900-60-90" required>
-              <div class="form__icon-wrapper form__icon-wrapper--phone">
-                <svg width="20" height="20">
-                  <use xlink:href="#icon-phone"></use>
-                </svg>
-              </div>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="form__fieldset-decor-wrapper">
+          <fieldset class="form__owner-info-wrapper">
+            <legend class="form__legend form__legend--owner-info">Контактные данные (владельца кота)</legend>
+            <ul class="form__list form__list-row" role="none">
+              <li class="form__item">
+                <label class="form__label form__label--email" for="form__email">
+                  E-mail:*
+                </label>
+                <input class="form__input-text form__input-text--owner-info" type="email" name="form__email" id="form__email" placeholder="kuklachev@gmail.com" required>
+                <div class="form__icon-wrapper form__icon-wrapper--mail">
+                  <svg width="17" height="13">
+                    <use xlink:href="#icon-mail"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="form__tel">
+                  Телефон:*
+                </label>
+                <input class="form__input-text form__input-text--owner-info" type="tel" name="form__tel" id="form__tel" placeholder="8 (960) 900-60-90" required>
+                <div class="form__icon-wrapper form__icon-wrapper--phone">
+                  <svg width="20" height="20">
+                    <use xlink:href="#icon-phone"></use>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
 
-        <fieldset class="form__comment-wrapper">
-          <legend class="form__legend form__legend--comment">Комментарий</legend>
-          <textarea class="form__comment" name="form__comment" id="form__comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </fieldset>
+        <div class="form__fieldset-decor-wrapper">
+          <fieldset class="form__comment-wrapper">
+            <legend class="form__legend form__legend--comment">Комментарий</legend>
+            <textarea class="form__comment" name="form__comment" id="form__comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+        </div>
 
-        <fieldset class="form__additional">
-          <legend class="form__legend form__legend--additional">Дополнительно</legend>
-          <ul class="form__list form__list-row form__list--checkbox" role="none">
-            <li class="form__item form__item--checkbox">
-              <input class="form__input-checkbox" type="checkbox" name="form__checkbox--sweeneter" id="form__checkbox--sweetener">
-              <label class="form__label form__label--checkbox" for="form__checkbox--sweetener">
-                Сахарозаменитель
-              </label>
-            </li>
-            <li class="form__item form__item--checkbox">
-              <input class="form__input-checkbox" type="checkbox" name="form__checkbox--water" id="form__checkbox--water">
-              <label class="form__label form__label--checkbox" for="form__checkbox--water">
-                Питьевая вода
-              </label>
-            </li>
-            <li class="form__item form__item--checkbox">
-              <input class="form__input-checkbox" type="checkbox" name="form__checkbox--milk" id="form__checkbox--milk">
-              <label class="form__label form__label--checkbox" for="form__checkbox--milk">
-                Молоко
-              </label>
-            </li>
-            <li class="form__item form__item--checkbox">
-              <input class="form__input-checkbox" type="checkbox" name="form__checkbox--vitamins" id="form__checkbox--vitamins">
-              <label class="form__label form__label--checkbox" for="form__checkbox--vitamins">
-                Витамины
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="form__fieldset-decor-wrapper">
+          <fieldset class="form__additional">
+            <legend class="form__legend form__legend--additional">Дополнительно</legend>
+            <ul class="form__list form__list-row form__list--checkbox" role="none">
+              <li class="form__item form__item--checkbox">
+                <input class="form__input-checkbox" type="checkbox" name="form__checkbox--sweeneter" id="form__checkbox--sweetener">
+                <label class="form__label form__label--checkbox" for="form__checkbox--sweetener">
+                  Сахарозаменитель
+                </label>
+              </li>
+              <li class="form__item form__item--checkbox">
+                <input class="form__input-checkbox" type="checkbox" name="form__checkbox--water" id="form__checkbox--water">
+                <label class="form__label form__label--checkbox" for="form__checkbox--water">
+                  Питьевая вода
+                </label>
+              </li>
+              <li class="form__item form__item--checkbox">
+                <input class="form__input-checkbox" type="checkbox" name="form__checkbox--milk" id="form__checkbox--milk">
+                <label class="form__label form__label--checkbox" for="form__checkbox--milk">
+                  Молоко
+                </label>
+              </li>
+              <li class="form__item form__item--checkbox">
+                <input class="form__input-checkbox" type="checkbox" name="form__checkbox--vitamins" id="form__checkbox--vitamins">
+                <label class="form__label form__label--checkbox" for="form__checkbox--vitamins">
+                  Витамины
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
 
         <div class="form__button-required-wrapper">
           <div class="form__submit-button-wrapper">
