@@ -1,8 +1,5 @@
 .form {
-  width: 320px;
-
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 }
 
 .form__header-wrapper {
@@ -28,55 +25,88 @@
   text-indent: 12px;
 }
 
+.form__fieldset-decor-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 14px;
+    right: 0;
+
+    width: 30%;
+    height: 3px;
+
+    background-color: $green-color;
+  }
+}
+
 .form__legend {
+  position: relative;
+  z-index: 1;
+
   @include fontOswaldRegular(24px, 24px);
 
-  &--owner-info {
-    position: relative;
+  background-color: #ffffff;
 
+  &--owner-info {
     &::before {
       content: "";
 
       position: absolute;
-      top: 12px;
-      right: -20px;
+      top: 14px;
+      left: 201px;
 
-      width: 100px;
+      width: 30%;
       height: 3px;
+
+      @media (min-width: 700px) {
+        width: 40%;
+      }
 
       background-color: $green-color;
     }
   }
 
   &--comment {
-    position: relative;
-
     &::before {
       content: "";
 
       position: absolute;
-      top: 12px;
-      right: -181px;
+      top: 14px;
+      left: 144px;
 
-      width: 158px;
+      width: 100%;
       height: 3px;
+
+      @media (min-width: 600px) {
+        width: 200%;
+      }
 
       background-color: $green-color;
     }
   }
 
   &--additional {
-    position: relative;
-
     &::before {
       content: "";
 
       position: absolute;
-      top: 16px;
-      right: -158px;
+      top: 14px;
+      left: 164px;
 
-      width: 135px;
+      width: 50%;
       height: 3px;
+
+      @media (min-width: 450px) {
+        width: 100%;
+      }
 
       background-color: $green-color;
     }
@@ -369,7 +399,7 @@ fieldset {
 .form__required-info {
   width: 320px;
 
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 
   @include fontArialRegular;
 
@@ -396,10 +426,7 @@ fieldset {
 
 @media (min-width: $tablet-width) {
   .form {
-    width: 768px;
-
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
   }
 
   .form__header-wrapper {
@@ -465,65 +492,38 @@ fieldset {
     text-indent: 15px;
   }
 
+  .form__fieldset-decor-wrapper {
+    &::before {
+      top: 23px;
+
+      width: 100%;
+    }
+  }
+
   .form__legend {
+    margin-left: -39px;
+    padding-left: 39px;
+    padding-right: 42px;
+
     @include fontOswaldRegular(36px, 36px);
 
     &--owner-info {
-      position: relative;
-
-      z-index: 1;
-
-      width: 594px;
-
-      text-align: left;
-
-      background-color: #ffffff;
-
       &::before {
-        top: 23px;
-        left: -69px;
-        z-index: -1;
-
-        width: 768px;
-        height: 3px;
-
-        background: linear-gradient(to right, $green-color 0%, $green-color 4%, #ffffff 4%, #ffffff 81.5%, $green-color 81.5%, $green-color 100%);
+        display: none;
       }
     }
 
     &--comment {
-      position: relative;
-
       &::before {
-        top: 23px;
-        left: -69px;
-        z-index: -1;
-
-        width: 768px;
-        height: 3px;
-
-        background: linear-gradient(to right, $green-color 0%, $green-color 4%, #ffffff 4%, #ffffff 37.5%, $green-color 37.5%, $green-color 100%);
+        display: none;
       }
     }
 
     &--additional {
-      position: relative;
-
       &::before {
-        top: 22px;
-        left: -69px;
-        z-index: -1;
-
-        width: 768px;
-        height: 3px;
-
-        background: linear-gradient(to right, $green-color 0%, $green-color 4%, #ffffff 4%, #ffffff 42.5%, $green-color 42.5%, $green-color 100%);
+        display: none;
       }
     }
-  }
-
-  fieldset {
-    width: 768px;
   }
 
   .form__cat-info-wrapper {
@@ -680,10 +680,7 @@ fieldset {
 
 @media (min-width: $desktop-width) {
   .form {
-    width: 1300px;
-
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
   }
 
   .form__header-wrapper {
@@ -822,36 +819,8 @@ fieldset {
   }
 
   .form__legend {
-    width: 1220px;
-
-    &--owner-info {
-      &::before {
-        left: -110px;
-
-        width: 112%;
-
-        background: linear-gradient(to right, $green-color 0%, $green-color 5%, #ffffff 5%, #ffffff 46%, $green-color 46%, $green-color 100%);
-      }
-    }
-
-    &--comment {
-      &::before {
-        left: -110px;
-
-        width: 112%;
-
-        background: linear-gradient(to right, $green-color 0%, $green-color 5%, #ffffff 5%, #ffffff 23%, $green-color 23%, $green-color 100%);
-      }
-    }
-
-    &--additional {
-      &::before {
-        left: -110px;
-
-        width: 112%;
-
-        background: linear-gradient(to right, $green-color 0%, $green-color 4.9%, #ffffff 4.9%, #ffffff 25.15%, $green-color 25.15%, $green-color 100%);
-      }
-    }
+    margin-left: -39px;
+    padding-left: 39px;
+    padding-right: 40px;
   }
 }

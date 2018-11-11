@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Кэт энерджи - Подбор программы</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
 
@@ -211,68 +214,74 @@
           </fieldset>
         </div>
 
-        <fieldset class="form__owner-info-wrapper">
-          <legend class="form__legend form__legend--owner-info">Контактные данные (владельца кота)</legend>
-          <ul class="form__list form__list-row" role="none">
-            <li class="form__item">
-              <label class="form__label form__label--email" for="form__email">
-                E-mail:*
-              </label>
-              <input class="form__input-text form__input-text--owner-info" type="email" name="form__email" id="form__email" placeholder="kuklachev@gmail.com" required>
-              <div class="form__icon-wrapper form__icon-wrapper--mail">
-                <svg width="17" height="13">
-                  <use xlink:href="#icon-mail"></use>
-                </svg>
-              </div>
-            </li>
-            <li class="form__item">
-              <label class="form__label" for="form__tel">
-                Телефон:*
-              </label>
-              <input class="form__input-text form__input-text--owner-info" type="tel" name="form__tel" id="form__tel" placeholder="8 (960) 900-60-90" required>
-              <div class="form__icon-wrapper form__icon-wrapper--phone">
-                <svg width="20" height="20">
-                  <use xlink:href="#icon-phone"></use>
-                </svg>
-              </div>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="form__fieldset-decor-wrapper">
+          <fieldset class="form__owner-info-wrapper">
+            <legend class="form__legend form__legend--owner-info">Контактные данные (владельца кота)</legend>
+            <ul class="form__list form__list-row" role="none">
+              <li class="form__item">
+                <label class="form__label form__label--email" for="form__email">
+                  E-mail:*
+                </label>
+                <input class="form__input-text form__input-text--owner-info" type="email" name="form__email" id="form__email" placeholder="kuklachev@gmail.com" required>
+                <div class="form__icon-wrapper form__icon-wrapper--mail">
+                  <svg width="17" height="13">
+                    <use xlink:href="#icon-mail"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="form__tel">
+                  Телефон:*
+                </label>
+                <input class="form__input-text form__input-text--owner-info" type="tel" name="form__tel" id="form__tel" placeholder="8 (960) 900-60-90" required>
+                <div class="form__icon-wrapper form__icon-wrapper--phone">
+                  <svg width="20" height="20">
+                    <use xlink:href="#icon-phone"></use>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
 
-        <fieldset class="form__comment-wrapper">
-          <legend class="form__legend form__legend--comment">Комментарий</legend>
-          <textarea class="form__comment" name="form__comment" id="form__comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </fieldset>
+        <div class="form__fieldset-decor-wrapper">
+          <fieldset class="form__comment-wrapper">
+            <legend class="form__legend form__legend--comment">Комментарий</legend>
+            <textarea class="form__comment" name="form__comment" id="form__comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+        </div>
 
-        <fieldset class="form__additional">
-          <legend class="form__legend form__legend--additional">Дополнительно</legend>
-          <ul class="form__list form__list-row form__list--checkbox" role="none">
-            <li class="form__item form__item--checkbox">
-              <input class="form__input-checkbox" type="checkbox" name="form__checkbox--sweeneter" id="form__checkbox--sweetener">
-              <label class="form__label form__label--checkbox" for="form__checkbox--sweetener">
-                Сахарозаменитель
-              </label>
-            </li>
-            <li class="form__item form__item--checkbox">
-              <input class="form__input-checkbox" type="checkbox" name="form__checkbox--water" id="form__checkbox--water">
-              <label class="form__label form__label--checkbox" for="form__checkbox--water">
-                Питьевая вода
-              </label>
-            </li>
-            <li class="form__item form__item--checkbox">
-              <input class="form__input-checkbox" type="checkbox" name="form__checkbox--milk" id="form__checkbox--milk">
-              <label class="form__label form__label--checkbox" for="form__checkbox--milk">
-                Молоко
-              </label>
-            </li>
-            <li class="form__item form__item--checkbox">
-              <input class="form__input-checkbox" type="checkbox" name="form__checkbox--vitamins" id="form__checkbox--vitamins">
-              <label class="form__label form__label--checkbox" for="form__checkbox--vitamins">
-                Витамины
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="form__fieldset-decor-wrapper">
+          <fieldset class="form__additional">
+            <legend class="form__legend form__legend--additional">Дополнительно</legend>
+            <ul class="form__list form__list-row form__list--checkbox" role="none">
+              <li class="form__item form__item--checkbox">
+                <input class="form__input-checkbox" type="checkbox" name="form__checkbox--sweeneter" id="form__checkbox--sweetener">
+                <label class="form__label form__label--checkbox" for="form__checkbox--sweetener">
+                  Сахарозаменитель
+                </label>
+              </li>
+              <li class="form__item form__item--checkbox">
+                <input class="form__input-checkbox" type="checkbox" name="form__checkbox--water" id="form__checkbox--water">
+                <label class="form__label form__label--checkbox" for="form__checkbox--water">
+                  Питьевая вода
+                </label>
+              </li>
+              <li class="form__item form__item--checkbox">
+                <input class="form__input-checkbox" type="checkbox" name="form__checkbox--milk" id="form__checkbox--milk">
+                <label class="form__label form__label--checkbox" for="form__checkbox--milk">
+                  Молоко
+                </label>
+              </li>
+              <li class="form__item form__item--checkbox">
+                <input class="form__input-checkbox" type="checkbox" name="form__checkbox--vitamins" id="form__checkbox--vitamins">
+                <label class="form__label form__label--checkbox" for="form__checkbox--vitamins">
+                  Витамины
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
 
         <div class="form__button-required-wrapper">
           <div class="form__submit-button-wrapper">
@@ -301,7 +310,7 @@
           </div>
         </div>
         <div class="contacts__map">
-          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533207!2d30.320858716352063!3d59.938716481876256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1541561830337"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533207!2d30.320858716352063!3d59.938716481876256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1541561830337"></iframe>
         </div>
       </section>
 
