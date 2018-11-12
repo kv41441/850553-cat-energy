@@ -20,9 +20,10 @@
 
 .form__input-text,
 .form__comment {
-  @include fontOswaldRegular(16px, 18px, #444444);
+  padding-left: 12px;
+
+  @include fontOswaldRegular(16px, 18px, $gray-text-color);
   text-transform: uppercase;
-  text-indent: 12px;
 }
 
 .form__fieldset-decor-wrapper {
@@ -53,7 +54,7 @@
 
   @include fontOswaldRegular(24px, 24px);
 
-  background-color: #ffffff;
+  background-color: $white-color;
 
   &--owner-info {
     &::before {
@@ -161,8 +162,12 @@ fieldset {
 
   padding-right: 15px;
 
-  @include fontOswaldRegular(16px, 18px, #222222);
+  @include fontOswaldRegular(16px, 18px, $darkgray-text-color);
   text-transform: uppercase;
+
+  &--age {
+    white-space: nowrap;
+  }
 
   &--radio {
     position: relative;
@@ -179,10 +184,10 @@ fieldset {
       width: 30px;
       height: 30px;
 
-      border: 1px solid #cfcfcf;
+      border: 1px solid $darkgray-border-color;
       border-radius: 50%;
 
-      background-color: #ffffff;
+      background-color: $white-color;
 
       cursor: pointer;
     }
@@ -226,9 +231,9 @@ fieldset {
       width: 30px;
       height: 30px;
 
-      border: 1px solid #cfcfcf;
+      border: 1px solid $darkgray-border-color;
 
-      background-color: #ffffff;
+      background-color: $white-color;
 
       cursor: pointer;
     }
@@ -262,22 +267,31 @@ fieldset {
 .form__input-text {
   flex-grow: 1;
 
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 10px;
 
   height: 45px;
 
-  border: 2px solid #e6e6e6;
+  border: 2px solid $gray-border-color;
 
   &--owner-info {
-    text-indent: 10px;
+    padding-left: 10px;
+    padding-right: 40px;
+
+    overflow: hidden;
+  }
+
+  &--age {
+    overflow: hidden;
   }
 
   &:hover {
-    border: 2px solid #cfcfcf;
+    border: 2px solid $darkgray-border-color;
   }
 
   &:focus {
-    border: 2px solid #000000;
+    border: 2px solid $black-color;
 
     & ~ .form__icon-wrapper {
       fill: $green-color;
@@ -285,10 +299,10 @@ fieldset {
   }
 
   &:invalid {
-    border: 2px solid #ff8282;
+    border: 2px solid $error-color;
 
     & ~ .form__icon-wrapper {
-      fill: #ff8282;
+      fill: $error-color;
     }
   }
 }
@@ -301,7 +315,7 @@ fieldset {
   margin-left: auto;
   margin-right: auto;
 
-  border: 1px solid #e6e6e6;
+  border: 1px solid $gray-border-color;
 }
 
 .form__input-radio {
@@ -336,16 +350,16 @@ fieldset {
 }
 
 .form__comment {
-  width: 280px;
+  width: 257px;
   height: 135px;
 
-  padding: 13px 0 0 0;
+  padding: 12px 10px 0 13px;
   margin-top: 35px;
 
   resize: none;
 
   &:focus {
-    border: 1px solid #000000;
+    border: 1px solid $black-color;
   }
 }
 
@@ -383,10 +397,10 @@ fieldset {
 
   border: none;
 
-  @include fontOswaldRegular(16px, 20px, #ffffff);
+  @include fontOswaldRegular(16px, 20px, $white-color);
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: $darkgreen-color;
   }
 
   &:active {
@@ -443,7 +457,7 @@ fieldset {
   }
 
   .form__label {
-    @include fontOswaldRegular(20px, 20px, #222222);
+    @include fontOswaldRegular(20px, 20px, $darkgray-text-color);
 
     &--radio {
       &::before {
@@ -488,8 +502,8 @@ fieldset {
 
   .form__input-text,
   .form__comment {
-    @include fontOswaldRegular(20px, 20px, #444444);
-    text-indent: 15px;
+    @include fontOswaldRegular(20px, 20px, $gray-text-color);
+    padding-left: 15px;
   }
 
   .form__fieldset-decor-wrapper {
@@ -594,7 +608,8 @@ fieldset {
     width: 631px;
 
     .form__input-text {
-      text-indent: 20px;
+      padding-left: 20px;
+      padding-right: 40px;
     }
 
     .form__list {
@@ -615,13 +630,14 @@ fieldset {
   }
 
   .form__comment {
-    width: 631px;
+    width: 601px;
     height: 160px;
 
     margin-top: 75px;
     padding-top: 15px;
 
-    text-indent: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
   }
 
   .form__icon-wrapper {
@@ -663,7 +679,7 @@ fieldset {
     padding-top: 16px;
     padding-bottom: 16px;
 
-    @include fontOswaldRegular(20px, 20px, #ffffff);
+    @include fontOswaldRegular(20px, 20px, $white-color);
   }
 
   .form__required-info {
@@ -744,7 +760,11 @@ fieldset {
     margin: 50px auto 0 auto;
 
     .form__input-text {
-      text-indent: 17px;
+      padding-left: 17px;
+
+      &--owner-info {
+        padding-right: 45px;
+      }
     }
 
     .form__list {
@@ -786,7 +806,7 @@ fieldset {
   }
 
   .form__comment {
-    width: 1220px;
+    width: 1190px;
 
     margin-top: 76px;
   }

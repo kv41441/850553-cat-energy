@@ -149,7 +149,7 @@
     margin-right: auto;
     padding-bottom: 30px;
 
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid $gray-border-color;
   }
 
   .info__header {
@@ -193,7 +193,7 @@
         right: 16px;
         z-index: -1;
 
-        @include fontOswaldRegular(281px, 281px, #f2f2f2);
+        @include fontOswaldRegular(281px, 281px, $lightgray-color);
       }
     }
 
@@ -213,7 +213,7 @@
         right: 0;
         z-index: -1;
 
-        @include fontOswaldRegular(281px, 281px, #f2f2f2);
+        @include fontOswaldRegular(281px, 281px, $lightgray-color);
       }
     }
 
@@ -233,7 +233,7 @@
         right: -4px;
         z-index: -1;
 
-        @include fontOswaldRegular(281px, 281px, #f2f2f2);
+        @include fontOswaldRegular(281px, 281px, $lightgray-color);
       }
     }
 
@@ -253,7 +253,7 @@
         right: -4px;
         z-index: -1;
 
-        @include fontOswaldRegular(281px, 281px, #f2f2f2);
+        @include fontOswaldRegular(281px, 281px, $lightgray-color);
       }
     }
   }

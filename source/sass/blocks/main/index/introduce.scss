@@ -7,11 +7,12 @@
   text-align: center;
 
   background: url("../img/index-background-mobile@1x.jpg") no-repeat 0 0,
-    linear-gradient(to bottom, #63a73a 69%, #ffffff 69%, #ffffff 100%);
+    linear-gradient(to bottom, $background-green-color 69%, $white-color 69%, $white-color 100%);
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url("../img/index-background-mobile@2x.jpg") no-repeat 0 0;
-    background-size: 640px 610px;
+    background: url("../img/index-background-mobile@2x.jpg") no-repeat 0 0,
+      linear-gradient(to bottom, $background-green-color 69%, $white-color 69%, $white-color 100%);
+    background-size: 320px 305px, 100% 100%;
   }
 }
 
@@ -23,14 +24,14 @@
   margin: 0;
   padding: 24px 0 0 0;
 
-  @include fontOswaldRegular(36px, 36px, #ffffff);
+  @include fontOswaldRegular(36px, 36px, $white-color);
   letter-spacing: -0.55px;
 }
 
 .introduce__description {
   margin-top: 26px;
 
-  @include fontOswaldRegular(14px, 14px, #ffffff);
+  @include fontOswaldRegular(14px, 14px, $white-color);
   text-transform: uppercase;
 }
 
@@ -40,7 +41,7 @@
   left: 20px;
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: $darkgreen-color;
   }
 
   &:active {
@@ -112,7 +113,7 @@
 
     padding-top: 15px;
 
-    @include fontOswaldRegular(20px, 20px, #ffffff);
+    @include fontOswaldRegular(20px, 20px, $white-color);
 
     span {
       margin-left: -3px;
@@ -139,12 +140,12 @@
       width: 50%;
       height: 696px;
 
-      background: #64a83b url("../img/index-background-desktop@1x.jpg") no-repeat 0 0;
+      background: $background-green-color url("../img/index-background-desktop@1x.jpg") no-repeat 0 0;
       background-size: 720px 696px;
       background-position: right;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background: url("../img/index-background-desktop@2x.jpg") no-repeat 0 0;
+        background: $background-green-color url("../img/index-background-desktop@2x.jpg") no-repeat 0 0;
         background-size: 720px 696px;
       }
     }

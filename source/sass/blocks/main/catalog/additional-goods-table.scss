@@ -3,7 +3,7 @@
 
   padding-bottom: 12px;
 
-  @include fontOswaldRegular(16px, 16px, #222222);
+  @include fontOswaldRegular(16px, 16px, $darkgray-text-color);
   font-weight: normal;
   text-transform: uppercase;
   text-align: left;
@@ -20,10 +20,10 @@
 }
 
 .additional-goods-table__button {
-  @include fontOswaldRegular(16px, 20px, #ffffff);
+  @include fontOswaldRegular(16px, 20px, $white-color);
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: $darkgreen-color;
   }
 
   &:active {
@@ -43,7 +43,7 @@
   padding-bottom: 15px;
   margin-left: -2px;
 
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $mediumgray-border-color;
 }
 
 .additional-goods-table {
@@ -82,7 +82,7 @@
     padding-right: 39px;
     padding-bottom: 24px;
 
-    border: 1px solid #cdcdcd;
+    border: 1px solid $mediumgray-border-color;
 
     &:not(:first-of-type) {
       border-top: none;

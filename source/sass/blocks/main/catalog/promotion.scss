@@ -2,12 +2,20 @@
   position: relative;
 
   width: 280px;
+  min-height: 287px;
 
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 15px;
-  margin-bottom: 17px;
+  margin-bottom: 38px;
+
+  background: $background-green-color url("../img/gift-photo-mobile@1x.jpg") no-repeat 0 0;
+  background-size: 280px 287px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: $background-green-color url("../img/gift-photo-mobile@2x.jpg") no-repeat 0 0;
+    background-size: 280px 287px;
+  }
 
   &::before {
     content: "";
@@ -25,22 +33,34 @@
 }
 
 .promotion__description {
-  position: absolute;
-  top: 171px;
-  left: 57px;
-  z-index: 1;
+  display: inline-block;
+  vertical-align: middle;
+
+  margin-top: 187px;
+  margin-left: 57px;
+  padding: 0;
 
   width: 165px;
 
-  @include fontArialRegular(16px, 20px, #ffffff);
+  @include fontArialRegular(16px, 20px, $white-color);
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .promotion {
     width: 708px;
+    min-height: 200px;
 
     margin-top: 69px;
+    margin-bottom: 77px;
+
+    background: $background-green-color url("../img/gift-photo-tablet@1x.jpg") no-repeat 0 0;
+    background-size: 708px 200px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: $background-green-color url("../img/gift-photo-tablet@2x.jpg") no-repeat 0 0;
+      background-size: 708px 200px;
+    }
 
     &::before {
       top: 65px;
@@ -49,8 +69,8 @@
   }
 
   .promotion__description {
-    top: 56px;
-    left: 423px;
+    margin-top: 72px;
+    margin-left: 423px;
 
     text-align: left;
   }
@@ -63,19 +83,22 @@
     margin: 39px 0 0 0;
     padding: 0;
 
-    &::before {
-      left: 97px;
+    background: $background-green-color url("../img/gift-photo-desktop@1x.jpg") no-repeat 0 0;
+    background-size: 245px 289px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: $background-green-color url("../img/gift-photo-desktop@2x.jpg") no-repeat 0 0;
+      background-size: 245px 289px;
     }
 
-    img {
-      width: 245px;
-      height: 289px;
+    &::before {
+      left: 97px;
     }
   }
 
   .promotion__description {
-    top: 170px;
-    left: 40px;
+    margin-top: 186px;
+    margin-left: 40px;
 
     text-align: center;
   }

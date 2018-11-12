@@ -77,7 +77,7 @@
   }
 
   .page-header--green-bg {
-    background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #64a83b 50%, #64a83b 99.9%, #ffffff 99.9%, #ffffff 100%);
+    background: linear-gradient(to right, $white-color 0%, $white-color 50%, $background-green-color 50%, $background-green-color 99.9%, $white-color 99.9%, $white-color 100%);
   }
 
   .page-header__nav {

@@ -77,14 +77,14 @@
   cursor: pointer;
 
   span {
-    border-bottom: 1px dotted #111111;
+    border-bottom: 1px dotted $lightblack-text-color;
   }
 
   &:hover {
     span {
       margin-bottom: -1px;
 
-      border-bottom: 1px solid #111111;
+      border-bottom: 1px solid $lightblack-text-color;
     }
   }
 
@@ -104,7 +104,7 @@
   margin-left: 10px;
   margin-right: 7px;
 
-  border: 1px solid #cdcdcd;
+  border: 1px solid $mediumgray-border-color;
   border-radius: 7px;
 
   &::before {
@@ -137,7 +137,7 @@
     margin-right: auto;
     padding-bottom: 74px;
 
-    background: linear-gradient(to bottom, #ffffff 55.5%, #e6e6e6 55.5%, #e6e6e6 100%);
+    background: linear-gradient(to bottom, $white-color 55.5%, $gray-border-color 55.5%, $gray-border-color 100%);
   }
 
   .example__text-container {
@@ -204,7 +204,7 @@
 
     width: 337px;
 
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 20%, transparent 20%, transparent 40%, #e6e6e6 40%, #e6e6e6 100%);
+    background: linear-gradient(to bottom, $white-color 0%, $white-color 20%, transparent 20%, transparent 40%, $gray-border-color 40%, $gray-border-color 100%);
 
     overflow: hidden;
   }
@@ -247,7 +247,7 @@
   .example__button {
     @include fontOswaldRegular(20px, 20px);
 
-    background-color: #e6e6e6;
+    background-color: $gray-border-color;
 
     &--before {
       padding-left: 0;
@@ -262,7 +262,7 @@
     width: 425px;
     height: 5px;
 
-    background-color: #dcdcdc;
+    background-color: $indicator-button-color;
 
     border: none;
 
@@ -286,18 +286,18 @@
 
     border-radius: 50%;
 
-    background: radial-gradient($green-color 17%, #ffffff 17%, #ffffff 100%);
+    background: radial-gradient($green-color 17%, $white-color 17%, $white-color 100%);
 
-    border: 1px solid #cdcdcd;
+    border: 1px solid $mediumgray-border-color;
 
     &:hover {
-      box-shadow: 0 3px 4px 0 #b4b4b4;
+      box-shadow: 0 3px 4px 0 $shadow-color;
     }
 
     &:active {
       border: 2px solid $green-color;
 
-      box-shadow: 0 5px 4px 0 #b4b4b4;
+      box-shadow: 0 5px 4px 0 $shadow-color;
     }
   }
 }
@@ -307,10 +307,9 @@
     width: 100%;
 
     margin-top: 0;
-    //padding-left: 110px;
     padding-bottom: 70px;
 
-    background: linear-gradient(to bottom, #ffffff 30.5%, #f2f2f2 30.5%, #f2f2f2 100%);
+    background: linear-gradient(to bottom, $white-color 30.5%, $lightgray-color 30.5%, $lightgray-color 100%);
   }
 
   .example__wrapper {
@@ -349,7 +348,7 @@
   .example__image-before-wrapper {
     width: 365px;
 
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 30%, transparent 30%, transparent 80%, #f2f2f2 80%, #f2f2f2 100%);
+    background: linear-gradient(to bottom, $white-color 0%, $white-color 30%, transparent 30%, transparent 80%, $lightgray-color 80%, $lightgray-color 100%);
   }
 
   .example__image-after-wrapper {
@@ -357,8 +356,6 @@
   }
 
   .example__image-container {
-    //width: 768px;
-
     margin-top: 16px;
     margin-left: 134px;
   }
@@ -370,6 +367,6 @@
   }
 
   .example__button {
-    background-color: #f2f2f2;
+    background-color: $lightgray-color;
   }
 }

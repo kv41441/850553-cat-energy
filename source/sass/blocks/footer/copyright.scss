@@ -2,24 +2,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__link {
   @include fontArialRegular(16px, 16px);
   text-decoration: none;
-
-  &:active {
-    fill: $green-color;
-
-    opacity: 0.3;
-  }
 }
 
 .copyright__icon {
   margin-right: -6px;
 
   svg {
-    fill: #666666;
+    fill: $darkgray-color;
 
     &:hover {
       fill: $green-color;
@@ -27,9 +25,13 @@
 
     &:active {
       fill: $green-color;
-
-      opacity: 0.3;
     }
+  }
+}
+
+.copyright__link:active ~ .copyright__icon {
+  svg {
+    fill: $green-color;
   }
 }
 

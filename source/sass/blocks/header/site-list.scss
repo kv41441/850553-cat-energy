@@ -8,7 +8,7 @@
 }
 
 .site-list__item {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid $gray-border-color;
 
   a {
     position: relative;
@@ -22,7 +22,7 @@
     font-family: "OswaldMedium", "Arial", sans-serif;
     font-size: 20px;
     line-height: 20px;
-    color: #111111;
+    color: $lightblack-text-color;
     text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
@@ -66,7 +66,7 @@
     a {
       margin-right: 35px;
 
-      @include fontOswaldRegular(18px, 25px, #222222);
+      @include fontOswaldRegular(18px, 25px, $darkgray-text-color);
     }
 
     &:last-of-type {
@@ -89,11 +89,11 @@
 
     &--white {
       a {
-        color: #ffffff;
+        color: $white-color;
 
         &:not([href]) {
           &::before {
-            background-color: #ffffff;
+            background-color: $white-color;
           }
         }
       }
